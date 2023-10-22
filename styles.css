@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Karla:wght@400;700&family=Outfit:wght@300;400;600&family=Raleway:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+:root{
+    --VerydarkbluemainBG: hsl(217, 54%, 11%);
+    --Verydarkbluesec: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: var(--VerydarkbluemainBG);
+    display: flex;
+    justify-content: center;
+}
+.sec__tittle{
+    color: var(--White);
+    font-weight: 700;
+}
+.sec__par{
+    color: var(--Softblue);
+    /* background-color: yellowgreen; */
+}
+.sec{
+    background-color: var(--Verydarkbluesec);
+    width: 285px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    margin:50px auto;
+    border-radius: 15px;
+}
+.sec__imag{
+    
+    width: 285px;
+    margin: 0;
+    border-radius: 10px;
+}
+.ethereum{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    font-size: 18px;
+    margin: 20px 0;
+    /* background-color: blue; */
+    text-align: left;
+    padding: 0;
+}
+.ethereum__eth{
+/* background-color: red; */
+    width: 130px;
+    display: flex;
+    color: var(--Cyan);
+}
+.ethereum__eth p{
+margin: auto 5px;
+}
+.ethereum img{
+    margin: 0px;
+}
+.ethereum__time p{
+    padding-top:0px ;
+    margin: auto;
+    
+    }
+.ethereum__time{
+    
+    width: 130px;
+    display: flex;
+    color: var(--Softblue);
+}
+.line{
+    background-color: var(--Verydarkblueline);
+    height: 2px;
+    width: 96%;
+    margin: auto;
+}
+.avatar{
+    display: flex;
+    margin-top:50px;
+}
+.avatar img {
+    height: 60px;
+    border-radius: 50%;
+    border: white solid 3px;
+}
+.avatar p{
+    margin: auto 5px;
+    color: var(--Softblue);
+}
+.avatar span{
+    color: var(--White);
+}
+.sec__div{
+    position: absolute;
+    width: 285px;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+    background-color:hsla(178, 100%, 50%, 0.5) ;
+    border-radius: 10px;
+    opacity:0;
+    transition: 0.1s;
+}
+.sec__div:hover{
+    opacity: 1;
+   
+}
+
+.sec__div img{
+    
+    height: 50px;
+    margin: auto;
+}
